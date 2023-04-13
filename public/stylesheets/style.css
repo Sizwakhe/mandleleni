@@ -1,0 +1,522 @@
+/**
+ * @license
+ *
+ * Font Family: Satoshi
+ * Designed by: Deni Anggara
+ * URL: https://www.fontshare.com/fonts/satoshi
+ * © 2023 Indian Type Foundry
+ *
+ * Font Styles:
+ * Satoshi Variable(Variable font)
+ * Satoshi Variable Italic(Variable font)
+ * Satoshi Light
+ * Satoshi Light Italic
+ * Satoshi Regular
+ * Satoshi Italic
+ * Satoshi Medium
+ * Satoshi Medium Italic
+ * Satoshi Bold
+ * Satoshi Bold Italic
+ * Satoshi Black
+ * Satoshi Black Italic
+ *
+*/
+
+
+/**
+* This is a variable font
+* You can controll variable axes as shown below:
+* font-variation-settings: 'wght' 900.0;
+*
+* available axes:
+
+* 'wght' (range from 300.0 to 900.0)
+
+*/
+
+@font-face {
+    font-family: 'Satoshi-Variable';
+    src: url('../fonts/Satoshi-Variable.woff2') format('woff2'),
+    url('../fonts/Satoshi-Variable.woff') format('woff'),
+    url('../fonts/Satoshi-Variable.ttf') format('truetype');
+    font-weight: 300 900;
+    font-display: swap;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Satoshi-VariableItalic';
+    src: url('../fonts/Satoshi-VariableItalic.woff2') format('woff2'),
+    url('../fonts/Satoshi-VariableItalic.woff') format('woff'),
+    url('../fonts/Satoshi-VariableItalic.ttf') format('truetype');
+    font-weight: 300 900;
+    font-display: swap;
+    font-style: italic;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth !important;
+}
+
+* {
+    font-family: 'Satoshi-Variable', serif;
+    box-sizing: border-box;
+
+}
+
+header {
+    background-color: black;
+    color: white;
+    padding: 1em;
+}
+
+.topBar {
+    display: inline-flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menuList {
+    margin: 0;
+    list-style: none;
+    display: inline-flex;
+    gap: 2em;
+}
+
+.menuList li a {
+    text-decoration: none;
+    color: #adadad;
+    font-size: small;
+}
+
+.script-text {
+    font-family: 'Edwardian Script ITC', cursive;
+    font-size: xx-large;
+}
+
+.call-btn {
+    background-color: white;
+    color: #000000;
+    padding: 0.5em 2em;
+}
+
+.contentHeader {
+    overflow: hidden;
+    z-index: 3;
+    height: 80vh;
+    color: white;
+    background-image: url("../images/DSCF7291.JPG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(0 0, 100% 0%, 100% 88%, 0% 100%);
+}
+
+.innerContentHolder {
+    display: inline-flex;
+    height: 100%;
+    background: linear-gradient(30deg, rgba(0, 0, 0, 0.91), rgba(0, 0, 0, 0.51), rgb(255, 0, 126));
+    padding: 80px 2em 80px;
+}
+
+.leftHeaderHolder, .rightHeaderHolder {
+    flex: 1;
+
+}
+
+.lines {
+    width: 100%;
+    height: 80px;
+    position: absolute;
+    margin-top: -80px;
+    z-index: -1;
+    clip-path: polygon(0 50%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.blue {
+    background-color: #0082a2;
+    width: 100%;
+    height: 0.5em;
+}
+
+.yellow {
+    width: 100%;
+    height: 0.5em;
+    background-color: #ffae00;
+}
+
+.pink {
+    background-color: #ff0099;
+}
+
+.aboutUsHolder {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url("../images/images - 2023-04-08T102921.827.jpeg");
+}
+
+.aboutUsOverlay {
+    background-color: rgba(255, 255, 255, 0.84);
+    color: black;
+
+}
+
+.aboutUsContentHolder {
+    padding: 80px;
+    text-align: center;
+}
+
+.ourServicesHolder {
+    background: linear-gradient(30deg, #000, #000, #ff0099, #000);
+}
+
+.ourServicesInnerHolder {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.servicesCardHolder {
+    display: grid;
+    gap: 2em;
+    margin-top: 3em;
+    grid-template-columns: 1fr 1fr;
+}
+
+.ourServicesContent {
+    padding: 3em;
+    color: white;
+}
+
+.ourServiceImageHolder {
+    padding: 2em;
+}
+
+.ourServicesImage {
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("../images/images - 2023-04-08T101937.761.jpeg");
+}
+
+.ourPackages {
+    background-color: white;
+    color: black;
+    padding: 2em;
+}
+
+.packagesHolder {
+    display: grid;
+    gap: 2em;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.packageCard {
+    border-width: 2px;
+    border-style: solid;
+    background-color: white;
+    border-image: linear-gradient(to right, #000000, #ff0099) 1;
+}
+
+.cardContent {
+    padding: 1em;
+}
+
+.packageNumber {
+    background-color: #e3e3e3;
+    border-radius: 0.3em;
+    padding: 1em;
+    font-size: small;
+    width: fit-content;
+}
+
+.price {
+    width: fit-content;
+    color: white;
+    font-size: small;
+    padding: 0.5em;
+    background-image: linear-gradient(to right, #000000, #ff0099);
+}
+
+.galleryHolder {
+    background: linear-gradient(30deg, #000, #000, #ff0099, #000);
+}
+
+.galleryInnerHolder {
+    padding: 2em;
+    color: white;
+}
+
+.galleryImageGrid {
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.galleryImageGrid div {
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 1em;
+    height: 220px;
+    width: 100%;
+}
+
+.image-1 {
+    background-image: url("../images/images - 2023-04-08T101918.072.jpeg");
+}
+
+.image-2 {
+    background-image: url("../images/images - 2023-04-08T102529.802.jpeg");
+}
+
+.image-3 {
+    background-image: url("../images/images - 2023-04-08T102410.797.jpeg");
+}
+
+.image-4 {
+    background-image: url("../images/images - 2023-04-08T102215.508.jpeg");
+}
+
+.image-5 {
+    background-image: url("../images/images - 2023-04-08T102059.465.jpeg");
+}
+
+.contactsHolder {
+    color: white;
+    background-color: #260015;
+}
+
+.contactsInnerHolder {
+    padding: 2em;
+}
+
+.contactContentHolder {
+    display: grid;
+    margin-top: 3em;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contactsRight {
+    background-color: #b7b7b7;
+    border-radius: 0.5em;
+    min-height: 400px;
+}
+
+.highlight {
+    color: #93326b;
+}
+
+.socialList {
+    display: inline-flex;
+    gap: 1em;
+    padding-inline-start: 0;
+    list-style: none;
+}
+
+
+footer {
+    background-color: black;
+    color: white;
+}
+
+.footerItem ul {
+    list-style: none;
+    padding-inline-start: 0;
+}
+
+.footerItem h2 {
+    color: rgba(187, 128, 156, 0.78);
+}
+
+.footerItem ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.innerFooter {
+    display: grid;
+    padding: 2em;
+    grid-gap: 1em;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.hum-burger {
+    display: none;
+    list-style: none;
+}
+
+#mySidenav {
+    z-index: 1000;
+    background-color: black;
+    color: white;
+    width: 0;
+    left: 0;
+    right: 0;
+    transition: width 500ms ease-in-out;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    height: 100vh;
+}
+
+#top-menu-list {
+    padding-inline-start: 0;
+    list-style: none;
+    color: white;
+}
+
+#close-btn {
+    background-color: #3b2530;
+    border-radius: 50%;
+    width: 2em;
+    margin: 3em;
+    height: 2em;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+}
+
+#close-btn a {
+    text-decoration: none;
+    color: white;
+    font-size: large;
+}
+
+#menu-list li a {
+    text-decoration: none;
+    color: white;
+    font-size: xx-large;
+}
+
+#menu-list {
+    padding-inline-start: 0;
+    width: 100%;
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1em;
+}
+
+.packagesP {
+    margin-bottom: 3em;
+}
+
+.smallText {
+    font-size: small;
+}
+
+.serviceIconHolder {
+    width: 48px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-around;
+    height: 48px;
+    padding: 1em;
+    border-radius: 0.5em;
+    background-color: rgba(122, 52, 94, 0.54);
+}
+
+@media (max-width: 48em) {
+    .aboutUsContentHolder {
+        padding: 2em;
+        text-align: center;
+    }
+
+    .hum-burger {
+        display: unset;
+    }
+
+    .menuHolder {
+        display: none;
+    }
+
+    .innerFooter {
+        display: grid;
+        padding: 2em;
+        grid-gap: 1em;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .contentHeader {
+        z-index: 3;
+        width: 100vw;
+        color: white;
+        height: fit-content;
+        background-image: url("../images/DSCF7291.JPG");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        clip-path: polygon(0 0, 100% 0%, 100% 97%, 0% 100%);
+    }
+
+    .innerContentHolder {
+        display: grid;
+        grid-template-columns: 1fr;
+        height: 100%;
+        padding: 6em 2em;
+    }
+
+    .rightHeaderHolder {
+        width: 100%;
+    }
+
+    .call-btn {
+        width: 100vw !important;
+        border-radius: 0.5em;
+        margin-bottom: 5em;
+    }
+
+    .ourServicesInnerHolder {
+        grid-template-columns: 1fr;
+    }
+
+    .servicesCardHolder {
+        gap: 2em;
+        grid-template-columns: 1fr;
+    }
+
+    .ourServicesImage {
+        height: 300px;
+    }
+
+    .packagesHolder {
+        display: grid;
+        gap: 2em;
+        grid-template-columns: 1fr;
+    }
+
+    .contactContentHolder {
+        grid-template-columns: 1fr;
+    }
+
+    #map {
+        margin-top: 2em;
+    }
+
+    .galleryImageGrid {
+        display: grid;
+        grid-gap: 1em;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .galleryImageGrid div {
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 1em;
+        height: 320px;
+        width: 100%;
+    }
+
+    .headerText {
+        font-size: xxx-large;
+    }
+}

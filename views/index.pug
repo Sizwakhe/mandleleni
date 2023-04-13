@@ -1,0 +1,219 @@
+extends layout
+
+block content
+    header
+        .topBar
+            .logoHolder
+                img(width='45px' src='../images/Mandleleni L1@2x.png')
+            .menuHolder
+                ul.menuList
+                    li
+                        a(href='#') Home
+                    li
+                        a(href='#about') About Us
+                    li
+                        a(href='#services') Our Services
+                    li
+                        a(href='#gallery') Gallery
+                    li
+                        a(href='#contacts') Contacts
+
+            ul.hum-burger
+                li
+                    span( onclick="openNav()" id='hum-burger-icon')  &#9776;
+    #mySidenav.sidenav
+        ul#top-menu-list
+            li#close-btn
+                a(href="javascript:void(0)" class="closebtn" onclick="closeNav()") &times;
+
+        ul#menu-list
+            li
+                a(href='#') Home
+            li
+                a(href='#services') Services
+            li
+                a(href='#contacts') Contacts
+            li
+                a(href='#gallery') Gallery
+            li
+                a(href='#about') About Us
+
+
+
+
+    .contentHeader
+        .innerContentHolder
+            .leftHeaderHolder
+                h1.headerText Mandleleni Funeral & Catering
+                p.script-text Serving the community that serve us.
+            .rightHeaderHolder
+                p Welcome to Mandleleni Funeral & Catering company, where we provide compassionate funeral service and quality catering for those who have experienced a loss. We understand that this is a difficult time for you and your family, and we are here to provide the support and care that you need. We also offer pre-planning services so that you can make arrangements for your own funeral in advance.This can provide peace of mind for both you and your family knowing that everything has been taken care of.
+                a(class='call-btn' href='tel:0714506048') Call Us Now
+    .lines.pink
+    .yellow
+    .blue
+
+    .aboutUsHolder#about
+        .aboutUsOverlay
+            .aboutUsContentHolder
+                h1.script-text We care about you
+                h1 We care about you
+                p Welcome to Mandleleni, a funeral parlour and catering company based in Mpumalanga Nelspruit. Our company was founded in 2020 with a passion for providing high-quality funeral and catering services to the community. We understand that losing a loved one is a difficult time, and that's why we strive to make the process as smooth and stress-free as possible. Our experienced funeral directors are available 24/7 to assist you with all your funeral arrangements, from choosing the perfect casket to arranging the funeral service. We offer a range of funeral packages to suit your budget, as well as customised options to cater to your specific needs.
+                p In addition to our funeral services, we also offer catering services for all types of events, including weddings, parties, and corporate functions. Our talented chefs use only the freshest ingredients to create delicious, mouth-watering meals that will impress your guests. We can accommodate any dietary requirements or preferences, and we offer a variety of menu options to suit your taste and budget. At Mandleleni, we pride ourselves on providing exceptional customer service and attention to detail. We understand the importance of every event we cater for, and we strive to exceed your expectations every time. Contact us today to find out how we can assist you with your funeral or catering needs.
+
+    .ourServicesHolder#services
+        .ourServicesInnerHolder
+            .ourServicesContent
+                .innerServiceHolder
+                    h1 Our Services
+                    p Our experienced staff will guide you through every step of the process, providing comfort and assistance whenever you need it.
+                    .servicesCardHolder
+                        .serviceCard
+                            .serviceIconHolder
+                                img( width='28px' src='../images/icons/iconmonstr-eat-1.svg')
+                            h3 Funeral Palour
+                            p Our funeral service include traditional funeral arrangements, cremation services, and memorial services. We work closely with you to create a meaning and personalized ceremony that honors the life of your loved one. Our experienced staff will guide you through every step of the process, providing comfort and assistance whenever you need it.
+                        .serviceCard
+                            .serviceIconHolder
+                                img( width='28px' src='../images/icons/iconmonstr-building-41.svg')
+                            h3 Catering Service
+                            p We offer catering for funeral receptions and memorials. We understand that food and drinks can provide comfort during this difficult time, and we are dedicated to providing delicious and comforting catering options for you and your guests.
+
+            .ourServiceImageHolder
+                .ourServicesImage
+    .ourPackages#packages
+        .innerPackagesHolder
+            h1 Our Packages
+            p.packagesP We offer a range of options to suit your needs and budget. Whether you're planning a funeral, wedding, corporate event, or any other occasion, we have a package that will meet your requirements. Our packages have been carefully designed to provide you with the best value for your money, without compromising on quality. At our company, we understand that every event is unique, and that's why we offer both standard packages and customised options to suit your specific needs. Our team of experienced professionals will work closely with you to ensure that every detail is taken care of, from the menu to the decor.
+            .packagesHolder
+                .packageCard
+                    .cardContent
+                        h1.packageNumber 1
+                        h3 Smart Plan A
+                        p The plan covers member, spouse, children and extended with a funeral value of flat lid, tables and chairs are included but no catering.
+                    h3.price R100.00/pm
+                .packageCard
+                    .cardContent
+                        h1.packageNumber 2
+                        h3 Smart Plan B
+                        p The plan covers member, spouse, children and extended with a funeral value of flat lid, tables and chairs are included but no catering.
+                    h3.price R150.00/pm
+                .packageCard
+                    .cardContent
+                        h1.packageNumber 3
+                        h3 Smart Plan C
+                        p The plan covers member, spouse, children and extended with a funeral value of flat lid, tables and chairs are included but no catering.
+                    h3.price R200.00/pm
+                .packageCard
+                    .cardContent
+                        h1.packageNumber 4
+                        h3 Special Plan
+                        p The plan covers member, spouse, children and extended with a funeral value of flat lid, tables and chairs are included but no catering.
+                    h3.price R300.00/pm
+            p All payments must be made before 7th of every month, if it happens that you miss the due date, then your policy will lapse
+
+    .galleryHolder#gallery
+        .galleryInnerHolder
+            h1 Gallery
+            p.packagesP We are proud to share our work with you and hope that our gallery inspires you with new ideas and possibilities for your upcoming event or occasion. Whether you're planning a wedding, corporate function, or funeral service, our team is dedicated to bringing your vision to life. Take a moment to browse through our gallery and see for yourself the quality and craftsmanship that we bring to every project. If you're ready to start planning your next event or occasion, we invite you to contact us to discuss how we can assist you.
+            .galleryImageGrid
+                .image-1
+                .image-2
+                .image-3
+                .image-4
+                .image-5
+    .contactsHolder#contacts
+        .contactsInnerHolder
+            h1 Contacts
+            p If you're ready to start planning your next event or occasion, we invite you to contact us to discuss how we can assist you.
+
+            .contactContentHolder
+                .contactsLeft
+                    p.highlight Email Address
+                    p sales@mandleleni.co.za
+                    p admin@mandleleni.co.za
+
+                    p.highlight Phone Numbers
+                    p +27 71 450 5058
+                    p +27 21 213 1219
+
+                    p.highlight Social Media
+                    .social-media
+                        ul.socialList
+                            li
+                                a(href='#')
+                                    img(width='24px' src='../images/icons/iconmonstr-facebook-6.svg')
+                            li
+                                a(href='#')
+                                    img(width='24px' src='../images/icons/iconmonstr-instagram-11 (1).svg')
+
+                            li
+                                a(href='#')
+                                    img(width='24px' src='../images/icons/iconmonstr-twitter-1 (1).svg')
+
+                    address Moyeni Mall, Shop 2231
+                .contactsRight#map
+    footer
+        .innerFooter
+            .footerItem
+                h2 Site Map
+                ul
+                    li Home
+                    li Contacts Us
+                    li Gallery
+                    li Our Services
+
+            .footerItem
+                h2 Social Media
+                ul
+                    li
+                        a(href='#') Facebook
+                    li
+                        a(href='#') Instagram
+                    li
+                        a(href='#') Whatsapp
+                    li
+                        a(href='#') Twitter
+            .footerItem
+                h2 Contacts
+                ul
+                    li
+                        a(href='#') Moyeni Mall
+                    li
+                        a(href='#') Msogwaba Sport Ground
+                    li
+                        a(href='#') Ngodini Shopping Center
+                    li
+                        a(href='#') Nkomeni Shoprite
+            .footerItem
+                img(width='100px' src='../images/Mandleleni L1@2x.png')
+                p.smallText  Our gallery features a diverse range of images that highlight our services and showcase our expertise. From stunning event setups and catering displays to beautiful floral arrangements and funeral services, our gallery offers a glimpse into the quality and attention to detail that we bring to every project.
+
+    script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBMzKheFPLiBa2PKedLsX3J-5QGfPi-5bU&callback=initMap&v=weekly" defer).
+    script.
+        let map;
+        function initMap() {
+            const myLatLng = {lat: -25.4710897, lng: 30.9752711}
+            map = new google.maps.Map(document.getElementById("map"), {
+                center: myLatLng,
+                zoom: 15,
+            });
+
+            new google.maps.Marker({
+                position: myLatLng,
+                map,
+                title: "Mandleleni Funeral & Catering Services"
+            });
+
+        }
+
+        window.initMap = initMap;
+        function openMenu() {
+            const x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block"
+            }
+
+        }
